@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    animation: glow 1.5s infinite alternate;
+}
+
+.title {
+    font-size: 50px;
+    color: red;
+    text-shadow: 0 0 10px yellow, 0 0 20px orange;
+}
+
+.fun-text {
+    font-size: 25px;
+    color: cyan;
+    animation: shake 0.5s infinite alternate;
+}
+
+/* Glow Effect */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px yellow, 0 0 20px orange; }
+    100% { text-shadow: 0 0 20px yellow, 0 0 40px red; }
+}
+
+/* Shake Effect */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(10px); }
+}
